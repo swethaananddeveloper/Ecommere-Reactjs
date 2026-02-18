@@ -1,14 +1,13 @@
 import React from 'react'
-import { FaCartArrowDown } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 
 const Header = () => {
   return (
+    <div>
 <nav className="navbar navbar-expand-lg bg-body-tertiary">
   <div className="container-fluid">
     <a className="navbar-brand" href="#">
- <img src="https://www.achieversit.com/assets/images/AIT-white.jpg" />
+ <img src="https://www.achieversit.com/assets/images/AIT-white.jpg" alt="" className="w-30"/>
     </a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
@@ -16,13 +15,11 @@ const Header = () => {
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav me-auto mb-2 mb-lg-0">
         <li className="nav-item">
-          <Link className="nav-link active" aria-current="page" to="/">Home</Link>
+          <a className="nav-link active" aria-current="page" to="/">Home</a>
         </li>
         <li className="nav-item">
-          <Link className="nav-link" to="/Product">
-            <FaCartArrowDown />
-            Card
-</Link>
+          <a className="nav-link" to="/Product">Card
+</a>
         </li>
       </ul>
       <form className="d-flex" role="search">
@@ -32,6 +29,7 @@ const Header = () => {
     </div>
   </div>
 </nav>
+</div>
 ) 
 }
 
